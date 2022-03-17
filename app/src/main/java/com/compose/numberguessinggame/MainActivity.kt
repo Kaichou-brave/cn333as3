@@ -82,6 +82,7 @@ fun GuessingGame(random: Int) {
                     var random = nextInt(1, 1000)
                     randNumber.value = random
                     output.value = ""
+                    count.value = 0
                 },
                 modifier = Modifier.size(width = 100.dp, height = 40.dp),
                 content = {
@@ -92,13 +93,13 @@ fun GuessingGame(random: Int) {
             Button(
                 onClick = {
                     var input = 0
-                    var isText = true
+                    var isText = 0
 
                     try {
                         input = text.toInt()
                     } catch (text: NumberFormatException) {
                         output.value = "Please enter only number"
-                        isText = false
+                        isText = 1
                     }
 
                     val checkAnswer = if (input > randNumber.value) {
@@ -111,7 +112,7 @@ fun GuessingGame(random: Int) {
                         output.value = "Congratulations !"
                     }
 
-                    if (isText == true) {
+                    if (isText == 0) {
                         checkAnswer
                     }
 
