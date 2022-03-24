@@ -15,7 +15,7 @@ Application Number Guessing Game จะมีการทำงานดัง�
 </p>
 
 ## Demo Link
-[CN333 - as3 NGG Compose Jetpack Demo | Raned Chuphueak]()
+[CN333 - as3 NGG Jetpack Compose Demo | Raned Chuphueak](https://youtu.be/qmkrn1G6wNI)
 
 ## Contributor
 รเณศ ชูเผือก 6210612864
